@@ -1,0 +1,53 @@
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Comic Neue', cursive;
+    font-size: 5vh;
+}
+
+html {
+    background: linear-gradient(-45deg, #886736, #6e4321, #cba250, #cab580);
+    background-size: 400% 400%;
+    animation: move 25s ease infinite;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://picsum.photos/1980/1024?rand=42");
+    position: relative;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.phrase {
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    filter: drop-shadow(0 0 3px #000);
+    z-index: 2;
+}
+
+#doge-container {
+    width: 80vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+#doge-container img {
+    width: 100%;
+}
