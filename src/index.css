@@ -5,7 +5,7 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Comic Neue', cursive;
-    font-size: 5vh;
+    font-size: 6vh;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 body {
     background-size: cover;
     background-position: center;
-    background-image: url("https://picsum.photos/1980/1024?rand=42");
+    background-image: url("https://picsum.photos/1980/1024?random=1");
     position: relative;
 }
 
@@ -46,6 +46,8 @@ body {
     overflow: hidden;
     position: absolute;
     z-index: 1;
+    pointer-events: none;
+    user-select: none;
 }
 
 #doge-container img {
